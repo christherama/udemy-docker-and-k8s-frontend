@@ -1,4 +1,4 @@
-sudo: required
+language: generic
 services:
   - docker
 
@@ -13,7 +13,7 @@ deploy:
   region: "us-west-2"
   app: "udemy-docker-and-k8s-frontend"
   env: "UdemyDockerAndK8sFrontend-env"
-  bucket_name: "elasticbeanstalk-us-west-2-130318069880"
+  bucket: "elasticbeanstalk-us-west-2-130318069880"
   bucket_path: "udemy-docker-and-k8s-frontend"
   on:
     branch: master
